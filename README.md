@@ -1,3 +1,3 @@
 # node-spawner
 
-Test-server to spawn docker instances with node.
+Test-application to spawn docker instances from a node server.
