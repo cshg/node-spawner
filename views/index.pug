@@ -4,4 +4,7 @@ html
   body
     h1= 'nodeSpawner'
     div= status
-
+    div
+      form(action='/api/docker', method='post')
+        input(type='text', value='number of instances')
+        input(type='submit', value='Create Docker instances')
