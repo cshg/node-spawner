@@ -3,8 +3,6 @@ var Docker = require('dockerode');
 
 var port = process.env.PORT || 3000;
 
-var data = require('./data.json');
-
 var app = express();
 app.set('view engine', 'pug');
 
