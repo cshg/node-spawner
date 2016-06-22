@@ -1,12 +1,7 @@
 var data = require('./data.json');
+var controller = require('./controller');
 
 module.exports = function(app) {
-  app.get('/', function(req, res) {
-    res.render('index', data);
-  });
-
-  app.post('/api/docker', function(req, res) {
-    console.log('post request received');
-    res.redirect('/');
-  })
+  app.get('/', controller.serveIndex);
+  app.post('/api/docker', controller.createDocker);
 }
