@@ -3,10 +3,15 @@ var Docker = require('dockerode');
 
 var port = process.env.PORT || 3000;
 
+var content = {
+  status: 'Ready to spawn docker instances'
+};
+
 var app = express();
+app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
-  res.send('Node Spawner: GET request received');
+  res.render('index', content);
 });
 
 app.listen(port, function() {
