@@ -1,5 +1,4 @@
 var express = require('express');
-var Docker = require('dockerode');
 
 var port = process.env.PORT || 3000;
 

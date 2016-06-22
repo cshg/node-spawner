@@ -3,7 +3,7 @@ html
     title= nodeSpawner
   body
     h1= 'nodeSpawner'
-    div= status
+    div='Status: ' + status
     div
       form(action='/api/docker', method='post')
         input(type='text', value='number of instances')
