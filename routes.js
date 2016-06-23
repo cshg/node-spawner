@@ -7,5 +7,7 @@ module.exports = function(app, Docker) {
     res.render('index', data);
   });
 
+  app.get('/api/docker', dockerController.checkContainer);
+
   app.post('/api/docker', dockerController.createInstance);
 }
