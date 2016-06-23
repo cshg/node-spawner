@@ -6,7 +6,6 @@ html
     div='Status: ' + status
     div
       form(action='/api/docker', method='post')
-        input(type='text', value='number of instances')
-        input(type='submit', value='Create Docker instances')
+        input(type='submit', value='Create and run new container')
       form(action='/api/docker', method='get')
-        input(type='submit', value='Check Container')
+        input(type='submit', value='Check existing container')
